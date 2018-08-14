@@ -1,0 +1,248 @@
+
+/*----------------------------------------------------------
+CSS Reset - Normalize.css
+----------------------------------------------------------*/
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/*----------------------------------------------------------
+ConfiguraÃ§Ãµes Gerais <<<<<==================================
+----------------------------------------------------------*/
+body{
+	background:url(imagens/background.jpg); 
+	color:#868686; 
+	font-family: "Open Sans", Helvetica, sans-serif, arial; 
+	font-size: 18px; /* 18px Ã· 16px = 1.125em */
+	font-weight: 300;
+	line-height: 1.2222222222em; /* 22px Ã· 18px = 1.22222222222em*/
+	text-align: left; 
+	text-shadow:1px 1px 0px #fff; 
+}
+.center{
+	margin: 0 auto;
+	width: 1200px; 	
+}
+/*.clearfix usado para adicionar um espaÃ§o vazio antes e depois dos elementos
+  evitando que os floats se aglomerem.
+*/
+.clearfix:before, .clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*fim do clearfix*/
+img, picture, video, embed {
+    max-width: 100%; /*define a largura mÃ¡xima em atÃ© 100%*/
+}
+h1, h2{
+	color:#FE9380;
+	font-size: 3.3333333333em; /* 60px Ã· 18px = 3.3333333333em */
+	font-weight: 800;
+	letter-spacing: -0.05em; /* -3px Ã· 60px = -0.05em */
+	line-height: 1em; /* 60px Ã· 60px = 1em */
+}
+h3{
+	font-size: 1.7777777778em; /* 32px Ã· 18px = 1.7777777778em */
+	font-weight: 300;
+	letter-spacing: -0.0625em; /* -2px Ã· 32px = -0.0625em */
+	line-height: 1.1875em; /* 38px Ã· 32px = 1.1875em */
+}
+p{
+	font-weight: 300;
+	letter-spacing: -0.05555555556em; /* -1px Ã· 18px = -0.05555555556em */
+}
+a, a:link, a:visited{
+	color:#FE9380; 
+	font-weight:400; 
+	text-decoration:none;
+}
+a:hover{
+	color:#FE5E41;
+	text-decoration:underline;
+	text-shadow:none; 
+}
+/*----------------------------------------------------------
+Sessão HEADER - Topo do Site <<<<<===========================
+----------------------------------------------------------*/
+header{
+	border-bottom: 1px solid #E0E0E0; 
+	height:150px;
+	width:1200px; 
+}
+/*
+=========================
+logotipo
+=========================
+*/
+	header h1 a{
+		background:url(imagens/logo-criar-site-responsivo.png) no-repeat; 
+		display:block; 
+		float:left; 
+		height:139px; 
+		text-indent:-9999; 
+		width:302px; 
+	}
+/*
+=========================
+nav - menu de navegaÃ§Ã£o
+=========================
+*/
+nav{
+	float:right; 
+	margin-top:78px; 
+	text-align:right; 
+	width:490px;
+}
+nav ul{
+	list-style-type:none; 
+}
+nav li {
+	display: inline; 
+}
+nav ul li a{
+	margin-right: 30px; 
+}
+nav ul li:nth-child(5) a{
+	margin-right:0px; 
+}
+nav a:link, nav a:visited{
+	color:#999;
+	font-size: 1.2222222222em; /* 22px Ã· 18px = 1.2222222222em */
+	font-weight: 300;
+	letter-spacing: -0.0909090909em; /* -2px Ã· 22px = -0.0909090909em */
+	line-height: 1.18181818182em; /* 26px Ã· 22px = 1.18181818182em */
+	display:inline-block;
+}
+nav a.ativo:link, nav a:hover{
+	color:#FE9380; 
+}
+/*----------------------------------------------------------
+Sessão .CHAMADA <<<<<========================================
+----------------------------------------------------------*/
+.chamada{
+	height:290px;
+	text-align:center;
+	width:1200px;
+}
+	h2 span{
+		font-size: 1em; /* 60px Ã· 60px = 1em */
+		font-weight: 300;
+		letter-spacing: -0.0333333333em; /* -2px Ã· 60px = 0.0333333333em */
+		line-height: 1em; /* 60px Ã· 60px = 1em */
+	}
+	.chamada h3 {
+		margin: 0 auto;
+		width:900px;
+	}
+/*----------------------------------------------------------
+Sessão .CONTAINER - ConteÃºdo com 3 colunas <<<<<=============
+----------------------------------------------------------*/
+.container{
+	background-color:#FE9481;
+	height: 417px;
+	padding:30px;
+	max-width:1200px;
+}
+.desktop, .tablet, .mobile{
+	float:left;
+	position:relative;
+	text-align:center;
+	width:360px;
+}
+.desktop, .tablet{
+	margin-right: 30px;
+}
+.mobile{
+	background-color:#9C8CB9;
+	margin-right:0px;
+}
+.desktop{
+	background-color:#FE9481;
+}
+.tablet{
+	background-color:#FCDA92;
+}
+/*
+=========================
+figure - imagens
+=========================
+*/
+.container figure{
+	margin: 15px auto 0px auto;
+	width:250px;
+}
+/*
+=========================
+formatação do texto
+=========================
+*/
+.container h3{
+	color:#fff;
+	font-size: 1.77777777778em; /* 32px Ã· 18px = 1.77777777778em */
+	font-weight: 300;
+	letter-spacing: -0.0625em; /* -2px Ã· 32px = 0.0625em */
+	margin-bottom: 30px;
+	text-shadow:none;
+}
+.container p{
+	background-color:#fff;
+	float:left;
+	height:160px;
+	padding:7px;
+	position:absolute;
+	width-max:360px;
+	text-align:justify;
+	top:225px;
+}
+/*
+=========================
+formatação do botão
+=========================
+*/
+span.btn{
+	font-size: 1.1111111111em; /* 20px Ã· 18px = 1.1111111111em */
+	font-weight: 400;
+	letter-spacing: -0.1em; /* -2px Ã· 20px = -0.1em */
+	height:27px;
+	margin-top: 30px;
+	position:absolute;
+	right: 1px;
+	text-align:center;
+	text-shadow:none;
+	width:120px;
+}
+span.btn a{
+	color:#fff;
+	padding: 2px 4px;
+}
+.desktop span.btn a{
+	background-color:#FE9481;
+}
+.tablet span.btn a{
+	background-color:#FCDA92;
+}
+.mobile span.btn a{
+	background-color:#9C8CB9;
+}
+/*----------------------------------------------------------
+Sessão FOOTER - Rodape com 2 colunas <<<<<===================
+----------------------------------------------------------*/
+footer{
+	clear:both;
+	height: 50px;
+	padding: 10px 0px;
+	width:1200px;
+}
+.copyright{
+	float:left;
+	margin-left:30px;
+}
+.desenvolvedor{
+	float:right;
+}
+.desenvolvedor figure{
+	width:182px;
+}

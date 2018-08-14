@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tabela 01</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		.tbl_container{
+			font-weight:  bold;
+		}
+		.tbl_container > table{
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		/*tabela zebrada*/
+		tr:nth-of-type(odd){
+			background: #ccc;
+		}
+
+		th{
+			background: #41c571;
+			color: white;
+			font-weight: bold;
+		}
+
+		td,th{
+			padding: 2px;
+			border:1px solid #f0edf7;
+			text-align: left;
+		}
+		tr:hover{
+			background: #f4f3f9;
+		}	
+	</style>
+</head>
+<body>
+
+	<div class="tbl_container">
+		<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>SIS_FIXA</th>
+						<th>POSTO_MASC</th>
+					</tr>
+					<tr>
+						<th>UF</th>
+						<th>QTD_UF</th>
+						<th>QTD_UF</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>DF</td>
+						<td>OI</td>
+						<td>12345</td>
+					</tr>
+					<tr>
+						<td>GO</td>
+						<td>BASE 01</td>
+						<td>12345</td>
+					</tr>
+					<tr>
+						<td>SC</td>
+						<td>BASE 02</td>
+						<td>12612</td>
+					</tr>
+					<tr>
+						<td>MG</td>
+						<td>BASE 02</td>
+						<td>12612</td>
+					</tr>
+					<tr>
+						<td>GO</td>
+						<td>BASE 02</td>
+						<td>12612</td>
+					</tr>
+				</tbody>
+			</table>
+	</div>
+	
+</body>
+</html>

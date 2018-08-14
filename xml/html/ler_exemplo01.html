@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+    var ajax = new XMLHttpRequest();
+
+    ajax.open( "GET", "../file_xml/ler_exemplo01.xml", true );
+    ajax.send();
+
+    ajax.onreadystatechange = function () {
+        if ( ajax.readyState == 4 ) {
+            var xml        = ajax.responseXML;
+            var corpo            = xml.getElementsByTagName( 'ConsultarFilasSACResponse' );
+            var grupoSaida = xml.getElementsByTagName( 'GRUPO-SAIDA' );
+            // var grupoSaidaLength = xml.getElementsByTagName( 'GPR-post_bds' ).length;
+            var child      = grupoSaida;
+
+            console.log( 'grupoSaida: ', grupoSaida );
+            console.log( 'child: ',  child)
+           
+            // console.log( 'GS-length: ', grupoSaidaLength );
+            // console.log( xml.getElementsByTagName('ConsultarFilasSACResponse') ); //VALIDO
+            // console.log(xml.getElementsByTagName('p')[1].innerHTML);
+        }
+    }
+</script>
+</html>

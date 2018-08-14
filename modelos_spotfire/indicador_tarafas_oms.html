@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Indicador tarefas OMS</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+	table {
+		border:1px solid #41C572;
+		width:100%;
+	}
+	table, th, td {
+		border-collapse: collapse;
+	}
+
+	th, td {
+		padding: 5px;
+		text-align: left;
+	}
+
+	.icons{
+		margin-left: 2px !important;
+		width: 10px !important;
+		height: 10px !important;
+	}
+	.title{
+		color: black; text-align:center; font-size: 12px; background-color: #41C572;
+	}
+	.title-center > th{
+		text-align: center;
+	}
+	.subtitle{
+		font-size: 11px;
+		text-align: center;
+	}
+	.border-left-title{
+		border-left: 1px solid #000 !important;
+	}
+
+	.border-left{
+		/*border-left: 1px solid #716e6e !important;*/
+		border-left: 1px solid rgba(113,110,110,0.4) !important;
+		text-align: right;
+	}
+	.font-size-10{
+		font-size: 10px;
+	}
+	.atencao, .alerta{
+		font-size: 10px;
+	}
+	.atencao > td, .alerta > td{
+		text-align: right;
+	}
+	.text-left{
+		text-align: left !important;
+	}
+
+</style>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<th colspan="11" class="title">ADSL</th>
+			<th colspan="6" class="title border-left-title">OS</th> 
+		</tr>
+		<tr class="title-center">
+			<th colspan="5" class="border-left">---OS Ponto a ponto</th>
+			<th colspan="6" class="border-left">---Bloqueio/Desbloqueio</th>
+			<th class="border-left font-size-10">SIS_FIXA</th>
+			<th class="font-size-10">POSTO MASC</th>
+		</tr>
+		<tr>
+			<th class="subtitle">UF</th>
+			<th class="subtitle">Z5</th> 
+			<th class="subtitle">Z6</th>
+			<th class="subtitle">Z7</th>
+			<th class="subtitle">ZC</th>    
+			<th class="subtitle">ZZ</th>
+			<th class="subtitle">Z9</th>
+			<th class="subtitle">Z2</th>
+			<th class="subtitle">ZD</th>
+			<th class="subtitle">ZX</th>
+			<th class="subtitle">ZN</th>
+			<th class="subtitle">Qtd OS</th>
+			<th class="subtitle">Qtd OS</th>
+		</tr>
+		<tr bgcolor="#404040">
+			<td>DF</td>
+			<td class="border-left">---<SpotfireControl id="70571ad258094d798016206c1e73bd17" /></td>
+			<td class="border-left">---<SpotfireControl id="b7625292cd734687ab398d90a9d6cbc3" /></td>
+			<td class="border-left">---<SpotfireControl id="963807a7396f453fb2fe47eee067265a" /></td>
+			<td class="border-left">---<SpotfireControl id="ad725ae4f3ca47f99580bcb2d17eb01f" /></td>
+			<td class="border-left">---<SpotfireControl id="546cd72afa4e4b76b81d8bdb94a7e2dc" /></td>
+			<td class="border-left">---<SpotfireControl id="d7d4f849b1c64a41b844b001512e11b1" /></td>
+			<td class="border-left">---<SpotfireControl id="af7026a073674e9c9444f0ba447f3af3" /></td>
+			<td class="border-left">---<SpotfireControl id="5694f48afacf4829bf58f8c8b853be82" /></td>
+			<td class="border-left">---<SpotfireControl id="84a6e0ab702a4e78b1c607cafabc38c1" /></td>
+			<td class="border-left">---<SpotfireControl id="b7ba5bd2834d4d118d8a516b7ef75726" /></td>
+			<!-- OS -->
+			<td class="border-left">---<SpotfireControl id="a0dca8ec028c4e96b52a5a8a2fe80659" /></td>
+			<td class="border-left">---<SpotfireControl id="73f4276c1ac14fefaf002f90ab9a0d09" /></td>
+		</tr>
+		<tr>
+			<td>GO</td>
+			<td class="border-left">---<SpotfireControl id="d91beca8451a42b9b3e1959b19da03bb" /></td>
+			<td class="border-left">---<SpotfireControl id="d1b71105bb364e3a9e51427df1ff1e05" /></td>
+			<td class="border-left">---<SpotfireControl id="c6e73a597152464eaf2408de50bae001" /></td>
+			<td class="border-left">---<SpotfireControl id="db064e929e7c4bc2aacd7ceef4dd1da0" /></td>
+			<td class="border-left">---<SpotfireControl id="fe682f77bb9a47f1952c5be0cfcb1a0d" /></td>
+			<td class="border-left">---<SpotfireControl id="bd9eda84c712489eb54b2eb715be79da" /></td>
+			<td class="border-left">---<SpotfireControl id="39316c4921e14015841bab605d51fd6c" /></td>
+			<td class="border-left">---<SpotfireControl id="8c95f1178c5c4eb68dde726bcd196e1e" /></td>
+			<td class="border-left">---<SpotfireControl id="a394e409fbd04680a4c2cf16d23aa07f" /></td>
+			<td class="border-left">---<SpotfireControl id="af636625e8b346faa58a7b34ae817d91" /></td>
+			<!-- os -->
+			<td class="border-left">---<SpotfireControl id="490e365efde94c3ebb54274ff6c0cc9a" /></td>
+			<td class="border-left">---<SpotfireControl id="412667d1d01341f8bb1f15abf7b19b9c" /></td>
+		</tr>
+		<tr bgcolor="#404040">
+			<td>PR</td>
+			<td class="border-left">---<SpotfireControl id="95b4106510d14e1fb2c9e46d3245ae9b" /></td>
+			<td class="border-left">---<SpotfireControl id="1574956decec4fb5a313f18d1bcd747e" /></td>
+			<td class="border-left">---<SpotfireControl id="eb04d0f35f2044b482295d8818a636d6" /></td>
+			<td class="border-left">---<SpotfireControl id="03bd3d36145d40b1b0fb0070d6a4931f" /></td>
+			<td class="border-left">---<SpotfireControl id="37b899b951b44e95b1419fc5cd3bd66d" /></td>
+			<td class="border-left">---<SpotfireControl id="3e20dea451194632af982d10661f9aab" /></td>
+			<td class="border-left">---<SpotfireControl id="e720e03b54dd41baa2783b3290fb63fd" /></td>
+			<td class="border-left">---<SpotfireControl id="ec4986bd41734f378dc76b63076df651" /></td>
+			<td class="border-left">---<SpotfireControl id="743d024f03404c22bcc88f6ea368ab3f" /></td>
+			<td class="border-left">---<SpotfireControl id="09c8d060321742b5a2bb5c546c20247c" /></td>
+			<!-- OS -->
+			<td class="border-left">---<SpotfireControl id="ad9ed005717a40ecb83c9a4eadd51320" /></td>
+			<td class="border-left">---<SpotfireControl id="a64bfb603dc54fd9b5d430123d7be8b7" /></td>
+		</tr>
+		<tr>
+			<td>SC</td>
+			<td class="border-left">---<SpotfireControl id="139b0c34342d48b9992bef89cebd57b1" /></td>
+			<td class="border-left">---<SpotfireControl id="be08f63d7a8449d4a4746799df29ff48" /></td>
+			<td class="border-left">---<SpotfireControl id="4e35823a14fb4796811d1400f6681b75" /></td>
+			<td class="border-left">---<SpotfireControl id="5f11ec8fd56446439ad4e584c5df5a93" /></td>
+			<td class="border-left">---<SpotfireControl id="7a5bceb6f6c342398feb78aad696adfe" /></td>
+			<td class="border-left">---<SpotfireControl id="9585d2f95e714581b8bfffd6292f8d74" /></td>
+			<td class="border-left">---<SpotfireControl id="7075fba722fc4087bb14e472737f03db" /></td>
+			<td class="border-left">---<SpotfireControl id="c8725d71450a4b34a0f6b67161f77351" /></td>
+			<td class="border-left">---<SpotfireControl id="7ad11d30d1d04172a452ed88ecc426d0" /></td>
+			<td class="border-left">---<SpotfireControl id="2bce6d097dc54d7fa5a5950cd41552dc" /></td>
+			<!-- OS -->
+			<td class="border-left">---<SpotfireControl id="51aa1cce135f44629bda11a12db48c76" /></td>
+			<td class="border-left">---<SpotfireControl id="1112ab01ffbd46a49fcfe19331490507" /></td>
+		</tr>
+		<tr bgcolor="#404040">
+			<td>RS</td>
+			<td class="border-left">---<SpotfireControl id="b0b1175648b84a2e9a6436c9a6a332e8" /></td>
+			<td class="border-left">---<SpotfireControl id="02f71f8258db41b09d0920aec4e481bc" /></td>
+			<td class="border-left">---<SpotfireControl id="383b14b89bc04e0f85c1332733431cc9" /></td>
+			<td class="border-left">---<SpotfireControl id="abe59865be57432aa4e5ef54a15e1883" /></td>
+			<td class="border-left">---<SpotfireControl id="64b9b8f98651403fbc14b48edde34dea" /></td>
+			<td class="border-left">---<SpotfireControl id="60477ee86cd74e53a11729fa3bae7574" /></td>
+			<td class="border-left">---<SpotfireControl id="b57c3e456ec14580b42994dba98718b8" /></td>
+			<td class="border-left">---<SpotfireControl id="57fbb5c05bca4e87990142b1530c5a8b" /></td>
+			<td class="border-left">---<SpotfireControl id="1b287049f1c14f7a8637405113beb72a" /></td>
+			<td class="border-left">---<SpotfireControl id="02514fe8657e4610ab5b0b33178e57c8" /></td>
+			<!-- OS -->
+			<td class="border-left">---<SpotfireControl id="643f3eaf4e2c4d5d8062444652c0dd46" /></td>
+			<td class="border-left">---<SpotfireControl id="47bf627213354ff1a950d24ddb99ffbd" /></td>
+		</tr>
+		<tr>
+			<td>MS</td>
+			<td class="border-left">---<SpotfireControl id="02a802c90f81422b8a85b4e1a185529e" /></td>
+			<td class="border-left">---<SpotfireControl id="0d56d029f6d449ee89d3aa98637f99e8" /></td>
+			<td class="border-left">---<SpotfireControl id="45940c1f9adf446f80fb39ad2e95cbe7" /></td>
+			<td class="border-left">---<SpotfireControl id="1e2fe78706b34387844c98d458ca1527" /></td>
+			<td class="border-left">---<SpotfireControl id="7deb7903f0c04ffb857e95cf3130781b" /></td>
+			<td class="border-left">---<SpotfireControl id="552508ab4d6b478aae58a7bc8f685c99" /></td>
+			<td class="border-left">---<SpotfireControl id="c9da234891f640feade78c9e47712992" /></td>
+			<td class="border-left">---<SpotfireControl id="2d54f339a18c44edbded86f82cbae641" /></td>
+			<td class="border-left">---<SpotfireControl id="6dbf34d602614577beb2399187e695e3" /></td>
+			<td class="border-left">---<SpotfireControl id="26f557fa290b41309fe5f69ec83c98f2" /></td>
+			<!-- OS -->
+			<td class="border-left">---<SpotfireControl id="5b5c95011acd4a6e9a2f34b119bbcc22" /></td>
+			<td class="border-left">---<SpotfireControl id="2d0b4573ca944a748181dce38239f009" /></td>
+		</tr>
+		<tr bgcolor="#404040">
+			<td>MT</td>
+			<td class="border-left">---<SpotfireControl id="85d24e549e17482e83aca62d9943d031" /></td>
+			<td class="border-left">---<SpotfireControl id="b33f35d6d8a943a7b0408492a9fdd80b" /></td>
+			<td class="border-left">---<SpotfireControl id="17b9df0faee1433ca6f005c91c19df81" /></td>
+			<td class="border-left">---<SpotfireControl id="a007670c43954ed289b74d4e96a93630" /></td>
+			<td class="border-left">---<SpotfireControl id="2ebd3070b5b44b6f9f0d4e961731f7a7" /></td>
+			<td class="border-left">---<SpotfireControl id="ab9f29091a5c4dadb8ae9289f9b97d27" /></td>
+			<td class="border-left">---<SpotfireControl id="4a6cda9330a74a15bd20bf80782a9713" /></td>
+			<td class="border-left">---<SpotfireControl id="63a0c2c9a3de4ba7a2300283cf0c40a2" /></td>
+			<td class="border-left">---<SpotfireControl id="a7314328283d42e595774f7efa8b3465" /></td>
+			<td class="border-left">---<SpotfireControl id="931335c96b7843bb85a94792ac3926d9" /></td>
+			<!-- OS -->
+			<td class="border-left">---<SpotfireControl id="14ba6678e1614fadaf0c83202b4bc923" /></td>
+			<td class="border-left">---<SpotfireControl id="e096a3ff98f54ae28b81bfe3f1e7d51a" /></td>
+		</tr>
+		<tr>
+			<td>AC</td>
+			<td class="border-left">---<SpotfireControl id="91ad3f2582514000a6a02c59fbc3b610" /></td>
+			<td class="border-left">---<SpotfireControl id="5158e0d4eabb4782929d736264f9ebd6" /></td>
+			<td class="border-left">---<SpotfireControl id="5bb199bca876496f94c9fde6e265bcf5" /></td>
+			<td class="border-left">---<SpotfireControl id="ff8bd9bfad1b497bbfa77ae0e06e0925" /></td>
+			<td class="border-left">---<SpotfireControl id="11a974ac1f07491a88e2a3009c41ef10" /></td>
+			<td class="border-left">---<SpotfireControl id="eec92595bcbb4240897312dbde5044f5" /></td>
+			<td class="border-left">---<SpotfireControl id="4e1af4fb9d5646cbb70ea2ed6062dbf3" /></td>
+			<td class="border-left">---<SpotfireControl id="641f0e096ce74f1e8f6c52e59831e706" /></td>
+			<td class="border-left">---<SpotfireControl id="3e1ba5cccba84928b7b18c38b0103a2b" /></td>
+			<td class="border-left">---<SpotfireControl id="ab140db70d4d42739b3171e3b4f0ad0b" /></td>
+			<!-- OS -->
+			<td class="border-left">---<SpotfireControl id="3301377dbfa9483a98e3e36fc7679b18" /></td>
+			<td class="border-left">---<SpotfireControl id="8d6e2726985648f4967acfd8b5036bc3" /></td>
+		</tr>
+		<tr bgcolor="#404040">
+			<td>RO</td>
+			<td class="border-left">---<SpotfireControl id="e687d10eeb6e4dc4ad159c44ace54127" /></td>
+			<td class="border-left">---<SpotfireControl id="9ecbc5a1dfb6497a9dd013c6128d6849" /></td>
+			<td class="border-left">---<SpotfireControl id="37eb1b95ea204b49b6fc5f8073456e72" /></td>
+			<td class="border-left">---<SpotfireControl id="e2cb636294e14166897471bbd415d64e" /></td>
+			<td class="border-left">---<SpotfireControl id="0657f37fa4d84e0fa3935ccd2c71277a" /></td>
+			<td class="border-left">---<SpotfireControl id="9f52cea32a8c4eb29055e933ff8dbe9a" /></td>
+			<td class="border-left">---<SpotfireControl id="a3185a4455ea4c8ab07a08c582465eea" /></td>
+			<td class="border-left">---<SpotfireControl id="aec2d42da3e547909308f8302a72120c" /></td>
+			<td class="border-left">---<SpotfireControl id="f9b9176772b4408c9b69c408df11ef0c" /></td>
+			<td class="border-left">---<SpotfireControl id="ed6267a3358e419cb09895d20dbb48d3" /></td>
+			<!-- OS -->
+			<td class="border-left">---<SpotfireControl id="a465add1171c4378909466df0a28dc32" /></td>
+			<td class="border-left">---<SpotfireControl id="78cc1b718bbc402aa5cdc69499354e7f" /></td>
+		</tr>
+		<tr>
+			<td>CR</td>
+			<td class="border-left">---<SpotfireControl id="d2a0f57aa2fd4ce0b8aeb5b44e74b35f" /></td>
+			<td class="border-left">---<SpotfireControl id="932d0720b7a440b2b0872ef4f4d9c125" /></td>
+			<td class="border-left">---<SpotfireControl id="369e2d7390b94497ab5f8d29c3c1948c" /></td>
+			<td class="border-left">---<SpotfireControl id="bc1d08a7038d4f11a148cf710940a2a0" /></td>
+			<td class="border-left">---<SpotfireControl id="a4c786860ac849ec9dd4f33a65459df1" /></td>
+			<td class="border-left">---<SpotfireControl id="39828d196ee640c094cbf43647182d95" /></td>
+			<td class="border-left">---<SpotfireControl id="4e60239f3bc740f38911df779209ee38" /></td>
+			<td class="border-left">---<SpotfireControl id="a2065c88339244d397299e4217465e74" /></td>
+			<td class="border-left">---<SpotfireControl id="b6be696904c64cfc833141b2b1121b59" /></td>
+			<td class="border-left">---<SpotfireControl id="43e96e8d13ef4c0eb3d50b23445a3f2a" /></td>
+			<!-- OS -->
+			<td class="border-left">---<SpotfireControl id="b5e557a133834a91aff489675c8ffdc2" /></td>
+			<td class="border-left">---<SpotfireControl id="d9e1756355f1439c8f6a7d3c0ed38777" /></td>
+		</tr>
+		<tr bgcolor="#404040">
+			<td><font size="2"><b>TOTAL</b></font></td>
+			<td>
+				<SpotfireControl id="0f6775d4f0714686977e62c0b7b6f69f" />
+			</td>
+			<td>
+				<SpotfireControl id="fa74e500ca2f42f5936369d310c2f5d9" />
+				<span class="icons">---<SpotfireControl id="cd2aadf0bedc414998f482a209bdb750" /></span>
+			</td>
+			<td>
+				<SpotfireControl id="c6ca6ff780af4f8bbdf877abb3725761" />
+				<span class="icons">---<SpotfireControl id="676820ff4e014b85969614cc82b66843" /></span>
+			</td>
+			<td>
+				<SpotfireControl id="154956158cb14373a25941c192b92de7" />
+				<span class="icons">---<SpotfireControl id="7096a43ab4c146039e3ab6349657d6f1" /></span>
+			</td>
+			<td>
+				<SpotfireControl id="2b93f9decbca4b5688a91494cd6ca4a8" />
+				<span class="icons">---<SpotfireControl id="cf31088041d54afd8da03dcf47c419aa" /></span>
+			</td>
+			<td>
+				<SpotfireControl id="cea454d00dd24e689777ae2407138fea" />
+				<span class="icons">---<SpotfireControl id="b4a5ae000b004836a846ce0563105cc6" /></span>
+			</td>
+			<td>
+				<SpotfireControl id="8a256363f5604e7b81712eacd948a018" />
+				<span class="icons">---<SpotfireControl id="8478960d51c241eb8912962066fb13bf" /></span>
+			</td>
+			<td>
+				<SpotfireControl id="90a5c551254e40b891d515e76b3cb7ac" />
+				<span class="icons">---<SpotfireControl id="472007af215b4a5c8b2c1a10cd69c17a" /></span>
+			</td>
+			<td>
+				<SpotfireControl id="93b1f15999004824b85b2f9a75855e0f" />
+				<span class="icons">---<SpotfireControl id="f89a4e5a90f94c06a5ea7f9239625ce6" /></span>
+			</td>
+			<td>
+				<SpotfireControl id="398dc665c59947d8b215f871e630e27e" />
+				<span class="icons">---<SpotfireControl id="0975a351a1d04d9387e0cfcccbcd375b" /></span>
+			</td>
+
+			<!-- OS -->
+			<td>
+				<SpotfireControl id="d3d2ab5f290d4277a1fccd3110765dcd" />
+				<span class="icons">---<SpotfireControl id="fd46c86a91774b47af87e96c64488c66" /></span>
+			</td>
+			<td>
+				<SpotfireControl id="3e066dbed6f749ce802018fe5d1667fb" />
+				<span class="icons">---<SpotfireControl id="aaf5c33a15a74235a32fba2d4b33f3bc" /></span>
+			</td>
+		</tr>
+		<tr class="atencao">
+			<td class="text-left">Atenção</td>
+			<td class="border-left"></td>
+			<td class="border-left">>200 e < 500</td>
+			<td class="border-left"></td>
+			<td class="border-left">>500 e < 1000</td>
+			<td class="border-left">>200 e < 500</td>
+			<td class="border-left"></td>
+			<td class="border-left">>200 e < 500</td>
+			<td class="border-left">>200 e < 500</td>
+			<td class="border-left">>200 e < 500</td>
+			<td class="border-left">>200 e < 500</td>
+			<td class="border-left">>200 e < 500</td>
+			<td class="border-left">>=500</td>
+		</tr>
+		<tr class="alerta">
+			<td class="text-left">Alerta</td>
+			<td class="border-left"></td>
+			<td class="border-left">>=500</td>
+			<td class="border-left"></td>
+			<td class="border-left">>=1000</td>
+			<td class="border-left">>=500</td>
+			<td class="border-left"></td>
+			<td class="border-left">>=500</td>
+			<td class="border-left">>=500</td>
+			<td class="border-left">>=500</td>
+			<td class="border-left">>=500</td>
+			<td class="border-left">>=500</td>
+			<td class="border-left">>=1000</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<br>
+</body>
+</html>

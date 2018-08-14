@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script>
+		var request = new XML()
+
+		request = <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+		xmlns:v1="http://osb.telemar/xsd/CadastroCliente/BuscarDadosCliente/V1" 
+		xmlns:esb="http://alsb.telemar/soap/esbUser">
+		<soap:Header xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+		<rot:entirexConfigurationKey
+		xmlns:rot="http://alsb.telemar/xsd/RoteadorEntirex/RotearRequisicaoEntirex">ConsultarFilasSAC</rot:entirexConfigurationKey>
+		<rot:entirexConfigurationParameter
+		xmlns:rot="http://alsb.telemar/xsd/RoteadorEntirex/RotearRequisicaoEntirex">UF</rot:entirexConfigurationParameter>
+		<rot:entirexConfigurationValue
+		xmlns:rot="http://alsb.telemar/xsd/RoteadorEntirex/RotearRequisicaoEntirex">SC</rot:entirexConfigurationValue>
+		</soap:Header>
+		<soapenv:Body>
+		<con:entirexInvokeRequest xmlns:con="http://alsb.telemar/wsdl/connector">
+		<ConsultarFilasSACRequest>
+		<CGSOP002>
+		<UF-PESQUISA>SC</UF-PESQUISA>
+		</CGSOP002>
+		</ConsultarFilasSACRequest>
+		</con:entirexInvokeRequest>
+		</soapenv:Body>
+		</soapenv:Envelope>;
+		var requestXml=request.toXMLString();
+
+
+		console.log("XML: " + requestXml);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>OSS e provissionamento Fixo</title>
+	<link rel="stylesheet" type="text/css" href="../css/digital.css">
+</head>
+<body class="painel-black">
+
+	<div class="container">
+
+		<div class="panel width24" style="position: relative;">
+			<h5 class="app-header text-center light-green">
+				<strong>CHAT BOX</strong>
+			</h5>
+
+			<table class="app-table-info">
+				<thead>
+					<tr >
+						<th class="text-center sub-title">
+							FUNCIONALIDADES
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr class="items">
+						<th class="text-left light-green">
+							Plantão
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th class="text-left light-green xxxx">
+							Plantão ....
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th class="text-left light-green">
+							ERROR
+						</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+
+		<div class="panel width24" style="position: relative;">
+			<h5 class="app-header text-center light-green">
+				<strong>CHAT BOX</strong>
+			</h5>
+
+			<table class="app-table-info">
+				<thead>
+					<tr >
+						<th class="text-center sub-title">
+							FUNCIONALIDADES
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr class="items">
+						<th class="text-left light-green">
+							Plantão
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th class="text-left light-green">
+							Plantão
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th class="text-left light-green">
+							PLAY
+						</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+
+		<div class="panel width24" style="position: relative;">
+			<h5 class="app-header text-center light-green">
+				<strong>CHAT BOX</strong>
+			</h5>
+
+			<table class="app-table-info">
+				<thead>
+					<tr >
+						<th class="text-center sub-title">
+							FUNCIONALIDADES
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr class="items">
+						<th class="text-left light-green">
+							Plantão
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th class="text-left light-green">
+							Plantão
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th class="text-left light-green">
+							Play
+						</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+
+		<div class="panel width24" style="position: relative;">
+			<h5 class="app-header text-center light-green">
+				<strong>CHAT BOX</strong>
+			</h5>
+
+			<table class="app-table-info">
+				<thead>
+					<tr >
+						<th class="text-center sub-title">
+							FUNCIONALIDADES
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr class="items">
+						<th class="text-left light-green">
+							Plantão
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th class="text-left light-green">
+							ERROR
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th class="text-left light-green">
+							PLAY
+						</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+
+	</div>
+
+</div>
+
+<script
+src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+
+<script type="text/javascript" charset="utf-8" async defer>
+
+	$(document).ready(function() {
+
+		var table = $('table.app-table-info');
+		var i = 0;
+		table.find('thead > tr > th').each(function() {
+			
+			var res = trim($(this).text());
+
+			if(res.indexOf("ERROR") > 1){
+				$(this).removeClass('light-green').addClass('red');
+				// $('.app-header').removeClass('light-green').addClass('red');
+				// $(this).parent("h5.app-header").removeClass('light-green').addClass('red');
+				
+				
+				var element = $(this).parent("h5.app-header").prev();
+				console.log('XX', element);
+			
+				return;
+			}
+		});
+
+
+	});
+
+	function trim(vlr){
+		return vlr.replace(" ","");
+	}
+</script>
+
+</body>
+</html>
