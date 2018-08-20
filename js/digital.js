@@ -1,3 +1,4 @@
+	//BuscaCoresElemento
 	$(document).ready(function() {
 
 		var table = $('table.app-table-info');
@@ -5,7 +6,7 @@
 		table.find('thead > tr > th').each(function() {
 			
 			var res = trim($(this).text());
-
+			console.log('LACC');
 			if(res.indexOf("ERROR") > 1){
 				//add class nas listas
 				$(this).removeClass('light-green').addClass('red');
@@ -13,15 +14,11 @@
 				$(this).parents().siblings('h5').removeClass('light-green').addClass('red');
 
 			}else if(res.indexOf('WARNING') > 1){
-				console.log('****666****');
 				$(this).removeClass('light-green').addClass('warning');
-				$(this).parents().siblings('h5').removeClass('light-green').addClass('warning');
-				return;
+				$(this).parents().siblings('h5').removeClass('light-green').addClass('red');
 			}
-			 if( res.indexOf('ERROR') > 1 || res.indexOf('WARNING') > 1){
-				console.log('------------------');
-				$(this).parents().siblings('h5').removeClass('light-green warning').addClass('red');
-				return;
+			if( res.indexOf('ERROR') > 1 || res.indexOf('WARNING') > 1){
+				$(this).parents().siblings('h5').removeClass('light-green').addClass('red');
 			}
 		});
 
