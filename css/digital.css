@@ -1,8 +1,12 @@
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
 h1{ text-align: center;}
 
 h5{
- border-bottom: 2px solid #FFF;
- margin-top: 20px;
+  border-bottom: 2px solid #FFF;
+  margin-top: 20px;
 }
 
 .header {
@@ -45,6 +49,12 @@ h5{
 
 .red{
   background: #b90c0c !important;
+  color: #FFF !important;
+  text-align: left !important;
+}
+
+.warning{
+  background: #ef9025 !important;
   color: #FFF !important;
   text-align: left !important;
 }
@@ -100,28 +110,28 @@ h5{
 
 
 .app-table-info{
- background: #E6E7E9;
- color: #3A3A3A;
- width:100%;
+  background: #E6E7E9;
+  color: #3A3A3A;
+  width:100%;
 }
 .app-table-info th,
 .app-table-info td{
- padding:8px;
- border-bottom:1px solid #fff;
+  padding:8px;
+  border-bottom:1px solid #fff;
 }
 .app-table-info th{
- background: #BEBFC1;
- color: #178F8D;
+  background: #BEBFC1;
+  color: #178F8D;
 }
 .app-table-info td{
- height:60px;
+  height:60px;
 }
 .app-table-info tr:first-child td:first-child{
- vertical-align:top;
- border-right:6px solid #fff;
+  vertical-align:top;
+  border-right:6px solid #fff;
 }
 .app-table-info td:last-child{
- border-left:6px solid #fff;
+  border-left:6px solid #fff;
 }
 
   /* 

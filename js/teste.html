@@ -8,7 +8,7 @@
             src="https://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
-    <script src="../js/oss_provisssionamento_fixo_modelo_BACK.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="teste.js" type="text/javascript" charset="utf-8" async defer></script>
     <style type="text/css" media="screen">
         h1 {
             text-align: center;
@@ -96,14 +96,14 @@
 
         .panel-body > table {
             margin: 11px 0px 0px 10px;
-            width: 100%;
+            width: 98%;
             text-align: left;
         }
 
         .btnRed {
             background: #900;
-            width: 10px;
-            height: 10px;
+            width: 14px;
+            height: 14px;
             border-radius: 50%;
             display: inline-block;
             margin-left: 10px;
@@ -111,8 +111,8 @@
 
         .btnGreen {
             background: green;
-            width: 10px;
-            height: 10px;
+            width: 14px;
+            height: 14px;
             border-radius: 50%;
             display: inline-block;
             margin-left: 10px;
@@ -120,8 +120,8 @@
 
         .btnYellow {
             background: yellow;
-            width: 10px;
-            height: 10px;
+            width: 14px;
+            height: 14px;
             border-radius: 50%;
             display: inline-block;
             margin-left: 10px;
@@ -256,46 +256,48 @@
 <body class="painel-black">
 <div style="display:none;">
     <!-- DADOS OMS -->
-    <span id="Z6">3</span> ||
-    <span id="Z7">3</span> ||
-    <span id="ZC">3</span> ||
-    <span id="ZZ">3</span> ||
-    <span id="Z9">30</span> ||
-    <span id="Z2">3</span> ||
-    <span id="ZD">3</span> ||
-    <span id="ZX">30</span> ||
-    <span id="ZN">3</span> ||
-    <span id="SIS">3</span> ||
-    <span id="MASC">30</span>
+    <span id="Z6">33</span> ||
+    <span id="Z7">33</span> ||
+    <span id="ZC">33</span> ||
+    <span id="ZZ">33</span> ||
+    <span id="Z9">33</span> ||
+    <span id="Z2">33</span> ||
+    <span id="ZD">33</span> ||
+    <span id="ZX">33</span> ||
+    <span id="ZN">33</span> ||
+    <span id="SIS">33</span> ||
+    <span id="MASC">33</span>
+    <br/>
+    <span id="valor1"></span> ||
+    <span id="valor2"></span> ||
+    <span id="valor3"></span> ||
+    <span id="valor4"></span> ||
+    <span id="valor5"></span> ||
+    <span id="valor6"></span> ||
+    <span id="valor7"></span> ||
+    <span id="valor8"></span> ||
+    <span id="valor9"></span> ||
+    <span id="valor10"></span> ||
+    <span id="valor11"></span>
     <br/>
     <!-- DADOS TAREFA -->
-    <span id="nullTask">3</span> ||
-    <span id="atualizaSAC">3</span> ||
-    <span id="consultaAgenda">3</span> ||
-    <span id="tarAutObjectel">702</span> ||
-    <span id="parMetalico">3</span> ||
-    <span id="tarAutoSisFixa">3</span> ||
-    <span id="sacStatusPap">3</span> ||
-    <span id="sacStatusVeloplus">3</span> ||
-    <span id="rfbPriAcessoSAC">3</span> ||
-    <span id="rfbPriAcessoOMS">3000</span> ||
-    <br/>
-    <!-- DADOS INTERFACES -->
-    <span id="interfaceASAP">3</span> ||
-    <span id="interfaceOBJECTEL">30000</span> ||
-    <br/>
-    <!-- Erros Tecnicos -->
-    <span id="errorTecnico">3</span> ||
-    <br/>
-    <!-- Notificações OMS -->
-    <span id="notificaOMS">33333</span> ||
-    <br/>
+    <span id="nullTask">55</span> ||
+    <span id="atualizaSAC">55</span> ||
+    <span id="consultaAgenda">55</span> ||
+    <span id="tarAutObjectel">55</span> ||
+    <span id="parMetalico">55</span> ||
+    <span id="tarAutoSisFixa">55</span> ||
+    <span id="sacStatusPap">55</span> ||
+    <span id="sacStatusVeloplus">55</span> ||
+    <span id="rfbPriAcessoSAC">55</span> ||
+    <span id="rfbPriAcessoOMS">55</span> ||
 </div>
+
 
 <div class="header">
     <h1 class="title-page">Painel OSS e provissionamento fixo</h1>
 </div>
-<!-- PAINEL OMS -->
+
 <div class="panel width24" style="position: relative;">
     <div class="panel-heading">
         <div class="titulo">OMS</div>
@@ -307,11 +309,144 @@
             <tbody>
             <tr>
                 <td>ADSL/OS</td>
+                <td>
+                    <span class="btnGreen btnGreenOs">&nbsp;</span>
+                    <span class="btnYellow btnYellowOs">&nbsp;</span>
+                    <span class="btnRed btnRedOs">&nbsp;</span>
+                </td>
+                <td>Tarefa Velox Fixo</td>
+                <td>
+                    <span class="btnGreen btnGreenTask">&nbsp;</span>
+                    <span class="btnYellow btnYellowTask">&nbsp;</span>
+                    <span class="btnRed btnRedTask">&nbsp;</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Interfaces P2P-OBJECTEL</td>
+                <td>data</td>
+                <td>Erros / Notificações</td>
+                <td>data</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="panel width24" style="position: relative;">
+    <div class="panel-heading">
+        <div class="titulo">OMS</div>
+    </div>
+
+    <div class="panel-body">
+        <table>
+
+            <tbody>
+            <tr>
+                <td>ADSL/OS</td>
+                <td>data</td>
+                <td>Tarefa Velox Fixo</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>Interfaces P2P-OBJECTEL</td>
+                <td>data</td>
+                <td>Erros / Notificações</td>
+                <td>data</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- <div class="panel width24" style="position: relative;">
+  <div class="panel-heading">
+    <div class="titulo">OMS</div>
+  </div>
+
+  <div class="panel-body">
+    <table>
+      <tr>
+        <td>ADSL/OS</td>
+        <td class="bloco_oms">
+          <span class="btnGreen btnGreenOs">&nbsp;</span>
+          <span class="btnYellow btnYellowOs">&nbsp;</span>
+          <span class="btnRed btnRedOs">&nbsp;</span>
+        </td>
+
+        <td>ADSL/OS</td>
+        <td class="bloco_oms">
+          <span class="btnGreen btnGreenOs">&nbsp;</span>
+          <span class="btnYellow btnYellowOs">&nbsp;</span>
+          <span class="btnRed btnRedOs">&nbsp;</span>
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>Tarefa Velox Fixo</td>
+        <td class="bloco_oms">
+          <span class="btnGreen btnGreenTask">&nbsp;</span>
+          <span class="btnYellow btnYellowTask">&nbsp;</span>
+          <span class="btnRed btnRedTask">&nbsp;</span>
+        </td>
+
+        <td>Tarefa Velox Fixo</td>
+        <td class="bloco_oms">
+          <span class="btnGreen btnGreenTask">&nbsp;</span>
+          <span class="btnYellow btnYellowTask">&nbsp;</span>
+          <span class="btnRed btnRedTask">&nbsp;</span>
+        </td>
+
+
+      </tr>
+    </table>
+  </div>
+</div> -->
+
+<div class="panel width24" style="position: relative;">
+    <div class="panel-heading">
+        <div class="titulo">OMS</div>
+    </div>
+
+    <div class="panel-body">
+        <table>
+
+            <tbody>
+            <tr>
+                <td>ADSL/OS</td>
+                <td>data</td>
+                <td>Tarefa Velox Fixo</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>Interfaces P2P-OBJECTEL</td>
+                <td>data</td>
+                <td>Erros / Notificações</td>
+                <td>data</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="panel width24" style="position: relative;">
+    <div class="panel-heading">
+        <div class="titulo">Bloqueio e desbloqueio R2</div>
+    </div>
+
+    <div class="panel-body">
+        <table>
+            <tr>
+                <td>ADSL/OS</td>
                 <td class="bloco_oms">
                     <span class="btnGreen btnGreenOs">&nbsp;</span>
                     <span class="btnYellow btnYellowOs">&nbsp;</span>
                     <span class="btnRed btnRedOs">&nbsp;</span>
                 </td>
+
+            </tr>
+
+            <tr>
                 <td>Tarefa Velox Fixo</td>
                 <td class="bloco_oms">
                     <span class="btnGreen btnGreenTask">&nbsp;</span>
@@ -319,39 +454,64 @@
                     <span class="btnRed btnRedTask">&nbsp;</span>
                 </td>
             </tr>
+        </table>
+    </div>
+</div>
+
+<div class="panel width24" style="position: relative;">
+    <div class="panel-heading">
+        <div class="titulo">OMS</div>
+    </div>
+
+    <div class="panel-body">
+        <table>
+
+            <tbody>
             <tr>
-                <td>Interface P2P ASAP à Processar</td>
-                <td class="bloco_oms">
-                    <span class="btnGreen btnGreenASAP">&nbsp;</span>
-                    <span class="btnYellow btnYellowASAP">&nbsp;</span>
-                    <span class="btnRed btnRedASAP">&nbsp;</span>
-                </td>
-                <td>Erros Técnicos</td>
-                <td class="bloco_oms">
-                    <span class="btnGreen btnGreenERROTEC">&nbsp;</span>
-                    <span class="btnYellow btnYellowERROTEC">&nbsp;</span>
-                    <span class="btnRed btnRedERROTEC">&nbsp;</span>
-                </td>
+                <td>ADSL/OS</td>
+                <td>data</td>
+                <td>Tarefa Velox Fixo</td>
+                <td>data</td>
             </tr>
             <tr>
-                <td>Interface P2P OBJECTEL à Processar</td>
-                <td class="bloco_oms">
-                    <span class="btnGreen btnGreenOBJECTEL">&nbsp;</span>
-                    <span class="btnYellow btnYellowOBJECTEL">&nbsp;</span>
-                    <span class="btnRed btnRedOBJECTEL">&nbsp;</span>
-                </td>
-                <td>Notificações OMS</td>
-                <td class="bloco_oms">
-                    <span class="btnGreen btnGreenNOTIFY">&nbsp;</span>
-                    <span class="btnYellow btnYellowNOTIFY">&nbsp;</span>
-                    <span class="btnRed btnRedNOTIFY">&nbsp;</span>
-                </td>
+                <td>Interfaces P2P-OBJECTEL</td>
+                <td>data</td>
+                <td>Erros / Notificações</td>
+                <td>data</td>
             </tr>
             </tbody>
         </table>
     </div>
 </div>
-<!-- END PAINEL OMS -->
+
+<div class="panel width24" style="position: relative;">
+    <div class="panel-heading">
+        <div class="titulo">OMVelox</div>
+    </div>
+
+    <div class="panel-body">
+        <table>
+            <tr>
+                <td>ADSL/OS</td>
+                <td class="bloco_oms">
+                    <span class="btnGreen btnGreenOs">&nbsp;</span>
+                    <span class="btnYellow btnYellowOs">&nbsp;</span>
+                    <span class="btnRed btnRedOs">&nbsp;</span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Tarefa Velox Fixo</td>
+                <td class="bloco_oms">
+                    <span class="btnGreen btnGreenTask">&nbsp;</span>
+                    <span class="btnYellow btnYellowTask">&nbsp;</span>
+                    <span class="btnRed btnRedTask">&nbsp;</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
 
 
 <div class="panel width99" style="position: relative;">
@@ -387,7 +547,5 @@
     </div>
 </div>
 
-
 </body>
 </html>
- 
